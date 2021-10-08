@@ -312,10 +312,17 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array) {
+  const lotOfArt = [];
+  for(let i = 0; i < array.length; i++){
+    if(Number(array[i].paintings) > 100){
+      lotOfArt.push(array[i].name);
+    }
+  }
+  console.log(lotOfArt);
+  return lotOfArt;
 }
-
+lotsOfArt(artists);
 
 /* ***** END OF TASKS ***** */
 
