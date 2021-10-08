@@ -253,10 +253,10 @@ function get20s(array) {
       livedIn1900s.push(artists[i].name);
     }
   }
-  console.log(livedIn1900s[0]);
-  console.log(livedIn1900s[1]);
-  console.log(livedIn1900s[2]);
-  console.log(livedIn1900s);
+  // console.log(livedIn1900s[0]);
+  // console.log(livedIn1900s[1]);
+  // console.log(livedIn1900s[2]);
+  // console.log(livedIn1900s);
   return livedIn1900s;
 }
 // get20s(artists);
