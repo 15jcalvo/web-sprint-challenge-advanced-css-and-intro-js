@@ -242,14 +242,14 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
-console.log(artists[0].years.split(' - '))
+// console.log(artists[0].years.split(' - '))
 function get20s(array) {
   const livedIn1900s = [];
   for(let i = 0; i < array.length; i++){
     const splitYears = artists[i].years.split(' - ');
     // console.log(splitYears);
     if(splitYears[0].includes('19') && splitYears[1].includes('19')){
-      livedIn1900s.push(artists[i]);
+      livedIn1900s.push(artists[i].name);
     }
   }
   console.log(livedIn1900s[0]);
