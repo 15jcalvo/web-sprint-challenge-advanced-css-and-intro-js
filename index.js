@@ -249,12 +249,13 @@ function get20s(array) {
   for(let i = 0; i < array.length; i++){
     const splitYears = artists[i].years.split(' - ');
     // console.log(splitYears);
-    if(splitYears[0].includes('19') && splitYears[1].includes('19')){
+    if(Number(splitYears[0]) > 1900 && Number(splitYears[1]) > 1900){
       livedIn1900s.push(artists[i].name);
     }
   }
   console.log(livedIn1900s[0]);
   console.log(livedIn1900s[1]);
+  console.log(livedIn1900s[2]);
   console.log(livedIn1900s);
   return livedIn1900s;
 }
