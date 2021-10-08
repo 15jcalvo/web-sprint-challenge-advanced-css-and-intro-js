@@ -259,7 +259,7 @@ function get20s(array) {
   console.log(livedIn1900s);
   return livedIn1900s;
 }
-get20s(artists);
+// get20s(artists);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
